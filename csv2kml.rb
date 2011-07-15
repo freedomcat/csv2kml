@@ -7,8 +7,7 @@ require 'pp'
 require "./getlatlng.rb"
 require "./rexml.rb"
 
-home_dir = "/home/shino/dev/csv2kml"
-data_dir = home_dir+"/data"
+data_dir = "/home/shino/dev/csv2kml/data"
 
 # フォームデータ受け渡し（ファイル名）
 cgi = CGI.new

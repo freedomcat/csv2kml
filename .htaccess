@@ -1,0 +1,6 @@
+Options +ExecCGI
+
+AddHandler cgi-script .rb
+DirectoryIndex index.html
+AddType application/vnd.google-earth.kml+xml kml
+
