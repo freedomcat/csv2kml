@@ -100,12 +100,18 @@ class KML
 		placemark_point_element.add_element(placemark_point_coordinates_element)
 	end
 
-	def write
-		$doc.write STDOUT
+	def write(filename=nil)
+		if(filename)then
+			$doc.write( File.new(filename , "w") )
+		else
+			$doc.write STDOUT
+		end
 	end
+
 end
 
 #kml = KML.new("","最終更新：2011/07/15")
 #kml.set(1,"フランス","ほげほげげ","46.2276380","2.2137490")
 #kml.set(1,"東京大学","ほげほげげ","35.7134285","139.7623078")
+#kml.write("./kml/rexml.kml")
 #kml.write
